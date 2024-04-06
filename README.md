@@ -13,5 +13,5 @@
 ![image](https://github.com/ansh-star/CodeNetWork/assets/96314656/dae6d098-c0bd-48ec-b109-b7b3fa00e159)
 ![image](https://github.com/ansh-star/CodeNetWork/assets/96314656/52dee0bd-5ff6-4655-b5f2-d9bba03891d8)
 ![image](https://github.com/ansh-star/CodeNetWork/assets/96314656/6b39bbcc-d583-450b-a792-019031c62926)
-![image](https://github.com/ansh-star/CodeNetWork/assets/96314656/24aecf77-d02a-4db5-8ca0-f2c717bc91c0)
+![image](https://github.com/ansh-star/CodeNetWork/assets/96314656/d1225b47-9c80-40b5-a834-11bdf4bc161c)
 ![image](https://github.com/ansh-star/CodeNetWork/assets/96314656/89cb172a-1cc9-45af-ab2f-3032794c24b7)
