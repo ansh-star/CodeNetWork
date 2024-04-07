@@ -1,16 +1,41 @@
 # CodeNetWork
 
-CodeNetWork is a full-stack social network website for developers. It is built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) and provides a platform for developers to create profiles, share posts, and connect with other developers.
+CodeNetWork is a full-stack social network application for developers. It is built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) and provides a platform for developers to create profiles, share posts, and connect with other developers.
 
-# Features
+## CodeNetwork Project Walkthrough
 
-User Authentication: Developers can register, log in, and manage their profiles.
+If you'd like to see a video walkthrough of the CodeNetWork project, you can check out the following YouTube video:
 
-Developer Profiles: Registered users can create and update their developer profiles, including information about their skills, experience, education and social media links.
+https://youtu.be/SvX35K5s-DA
 
-Posts and Comments: Users can create posts, which other users can comment on. The wesite supports features like liking, commenting, and deleting posts.
+This walkthrough should give you a comprehensive understanding of the CodeNetWork project and how it works. Feel free to refer to the video as you explore the codebase and try out the application yourself.
 
-Developer Network: Users can find and connect with other developers, view their profiles, and interact with them through posts and comments.
+## Features
+
+### User Authentication
+- Developers can register, log in, and manage their profiles.
+
+### Developer Profiles
+- Registered users can create and update their developer profiles, including information about their skills, experience, education, and social media links.
+- If the user has a Gravatar account associated with the email address used for their CodeNetWork account, their Gravatar profile picture will be displayed on their developer profile.
+
+### Posts and Comments
+- Users can create posts, which other users can comment on.
+- The application supports features like liking, commenting, and deleting posts.
+
+### Developer Network
+- Users can find and connect with other developers, view their profiles, and interact with them through posts and comments.
+
+### GitHub Repository Integration
+- When users log in and provide their GitHub username, the application fetches and displays their top 5 most recent GitHub repositories.
+- For each repository, the following information is displayed:
+  - Repository name
+  - Repository description
+  - Number of stars
+  - Number of forks
+  - Link to the repository on GitHub
+
+This integration with the GitHub API allows developers to showcase their GitHub projects and activity directly on the CodeNetWork application, enhancing the overall user experience and promoting collaboration within the developer community.
 
 ## Tech Stack
 
@@ -33,7 +58,6 @@ Developer Network: Users can find and connect with other developers, view their 
 **Frontend**:
 - React Router
 - Axios
-- Moment.js
 - React Redux
 - Redux Thunk
 
@@ -43,29 +67,49 @@ Developer Network: Users can find and connect with other developers, view their 
 - Bcrypt
 - JSON Web Token
 - Validator
+- Config
+- Gravatar
+- Normalize-url
 
 
 ## Getting Started
 
 To get started with the CodeNetWork project, please follow these steps:
 
-1. Clone the repository:
+### Clone the repository:
    ```
    https://github.com/ansh-star/CodeNetWork.git
    ```
-2. Install dependencies:
+### Add a default.json file in config folder with the following
+
+   ```json
+   {
+  "mongoURI": "<your_mongoDB_Atlas_uri_with_credentials>",
+  "jwtSecret": "secret",
+  "githubCLientId": "<yoursecrectaccesstoken>",
+  "githubSecret":"<youtgithubsecrettoken>"
+   }
    ```
-   cd CodeNetWork
-   npm install
-   ```
-3. Set up the environment variables:
-   - Create a `.env` file in the root directory of the project.
-   - Add the necessary environment variables, such as the MongoDB connection string and JWT secret.
-4. Start the development server:
-   ```
-   npm run dev
-   ```
-5. Open the application in your browser at `http://localhost:3000`.
+
+### Install server dependencies
+
+```bash
+npm install
+```
+
+### Install client dependencies
+
+```bash
+cd client
+npm install
+```
+
+### Run both Express & React from root
+
+```bash
+npm run dev
+```
+### Open the application in your browser at `http://localhost:3000`.
 
 ## Contributing
 
@@ -83,6 +127,5 @@ CodeNetWork is an open-source project, and contributions are welcome! If you fin
 ![image](https://github.com/ansh-star/CodeNetWork/assets/96314656/2bab3202-a8b2-46ba-9a5d-52bca3035270)
 ![image](https://github.com/ansh-star/CodeNetWork/assets/96314656/dae6d098-c0bd-48ec-b109-b7b3fa00e159)
 ![image](https://github.com/ansh-star/CodeNetWork/assets/96314656/52dee0bd-5ff6-4655-b5f2-d9bba03891d8)
-![image](https://github.com/ansh-star/CodeNetWork/assets/96314656/6b39bbcc-d583-450b-a792-019031c62926)
 ![image](https://github.com/ansh-star/CodeNetWork/assets/96314656/d1225b47-9c80-40b5-a834-11bdf4bc161c)
 ![image](https://github.com/ansh-star/CodeNetWork/assets/96314656/89cb172a-1cc9-45af-ab2f-3032794c24b7)
